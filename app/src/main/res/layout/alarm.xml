@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmt"
+    android:orientation="vertical">
+
+
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#60BFF5"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:title="@string/alarmToolbar"
+        android:id="@+id/alarmTitle">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="@string/alarmName"
+        android:id="@+id/alarmName"/>
+
+
+
+
+    <EditText
+        android:id="@+id/alarmtime"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:ellipsize="middle"
+        android:ems="10"
+        android:hint="@string/alarmTime"
+        android:inputType="text|time"
+        android:autofillHints=""
+
+        />
+
+    <EditText
+        android:id="@+id/days"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/days"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/pickdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/datepick"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/alarmnotes"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/alarmNotes"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelalarm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#F8E4302C"
+            android:padding="20dp"
+
+
+            android:text="@string/cancelalarm"
+            android:layout_weight="1"
+             />
+
+        <Button
+            android:id="@+id/savealarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:backgroundTint="#DD2994E7"
+            android:padding="20dp"
+            android:text="@string/savealarm" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

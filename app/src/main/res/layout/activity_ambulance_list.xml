@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmulanceList"
+
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar"
+        android:elevation="10dp"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:title="AMBULANCE SERVICE PROVIDER LIST"
+        android:id="@+id/ambulancetoolbar"
+        app:navigationIcon="@drawable/cursor"
+        app:titleTextColor="@color/black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:src="@drawable/cover5" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:id="@+id/ambimg"
+                    android:src="@drawable/applogo"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ambname"
+                        android:hint=""
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cnc"
+                        android:textSize="30dp"
+                        android:text="Khaled Ambulance"/>
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ambaddress"
+                        android:hint=""
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cnc"
+                        android:textSize="20dp"
+                        android:text="Mohammadia Housing Society"/>
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ambphone"
+                        android:hint=""
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cnc"
+                        android:textSize="20dp"
+                        android:text="+8801892389222"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:id="@+id/ambimg2"
+                    android:src="@drawable/applogo"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ambname2"
+                        android:hint=""
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cnc"
+                        android:textSize="30dp"
+                        android:text="Malek Ambulance"/>
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ambaddress2"
+                        android:hint=""
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cnc"
+                        android:textSize="20dp"
+                        android:text="Mohammadia Housing Society"/>
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ambphone2"
+                        android:hint=""
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cnc"
+                        android:textSize="20dp"
+                        android:text="+8801892389222"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ambulance"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:title="AMBULANCE SERVICE"
+        android:id="@+id/ambulancetoolbar"
+        app:navigationIcon="@drawable/cursor"
+        app:titleTextColor="@color/black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT YOUR AREA"
+                android:fontFamily="@font/cnc"
+                android:textFontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:elevation="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:id="@+id/ambimg"
+                    android:src="@drawable/ambulence"
+                    />
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/consult"
+                    android:hint=""
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cnc"
+                    android:textSize="20dp"
+                    android:text="MOHAMMADPUR"/>
+
+            </LinearLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ambulancerecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

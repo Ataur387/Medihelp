@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="calendar">#6ADFF6</color>
+    <color name="grad1">#f05053</color>
+    <color name="grad2">#D76D77</color>
+    <color name="grad3">#FFAF7B</color>
+    <color name="homepage">#ffff00</color>
+    <color name="color2">#3df8ff</color>
+    <color name="black">#000000</color>
+    <color name="blue1">#85C1E9</color>
+    <color name="corall">#F08080</color>
+    <color name="lblue">#b6fffd</color>
+</resources>

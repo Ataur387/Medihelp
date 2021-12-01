@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hospital"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calendar"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:title="HOSPITAL LOCATION"
+        android:id="@+id/hospitaltoolbar"
+        app:navigationIcon="@drawable/cursor"
+        app:titleTextColor="@color/black"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT YOUR AREA"
+                android:fontFamily="@font/cnc"
+                android:textFontWeight="700"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:elevation="10dp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hospitalrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>
